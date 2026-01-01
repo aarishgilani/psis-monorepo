@@ -12,7 +12,7 @@ Analyze Canadian university program specializations by calculating **Location Qu
 
 ```mermaid
 flowchart TD
-	A[Raw StatCan PSIS Data] --> B[Python Ingestion (dlt)]
+	A[Raw StatCan PSIS Data] --> B["Python Ingestion (dlt)"]
 	B --> C[PostgreSQL Storage]
 	C --> D[dbt Transformation]
 	D --> E[PHP API]
